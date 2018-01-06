@@ -10,24 +10,14 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/../Spider/scrapy/ScrapyVaticanNews.py" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../Spider/util/Character.py" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../Spider/util/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/facebookapi/publushFacebook.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/main.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/preprocess/Process2.py" />
       <change beforePath="$PROJECT_DIR$/../Spider/General.py" afterPath="$PROJECT_DIR$/../Spider/General.py" />
       <change beforePath="$PROJECT_DIR$/../Spider/database/DataBase.py" afterPath="$PROJECT_DIR$/../Spider/database/DataBase.py" />
       <change beforePath="$PROJECT_DIR$/../Spider/database/model/Model.py" afterPath="$PROJECT_DIR$/../Spider/database/model/Model.py" />
       <change beforePath="$PROJECT_DIR$/../Spider/main.py" afterPath="$PROJECT_DIR$/../Spider/main.py" />
       <change beforePath="$PROJECT_DIR$/../Spider/scrapy/ScrapySempreQuestione.py" afterPath="$PROJECT_DIR$/../Spider/scrapy/ScrapySempreQuestione.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/father-borwn.iml" afterPath="$PROJECT_DIR$/.idea/father-borwn.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/database/DataBase.py" afterPath="$PROJECT_DIR$/database/DataBase.py" />
-      <change beforePath="$PROJECT_DIR$/database/model/Model.py" afterPath="$PROJECT_DIR$/database/model/Model.py" />
-      <change beforePath="$PROJECT_DIR$/preprocess/Process.py" afterPath="$PROJECT_DIR$/preprocess/Process.py" />
-      <change beforePath="$PROJECT_DIR$/preprocess/scrapy/ScrapySempreQuestione.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/preprocess/scrapy/__init__.py" afterPath="$PROJECT_DIR$/facebookapi/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/semprequestione/crawled.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/semprequestione/queue.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Page/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
