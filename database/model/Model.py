@@ -1,16 +1,26 @@
-from neomodel import StructuredNode, StringProperty, RelationshipTo, RelationshipFrom, config
-
-class News(StructuredNode):
-    title = StringProperty(unique_index=True)
-    content = StringProperty(unique_index=True)
-    site = RelationshipTo('Site', 'PUBLICOU')
-    tipo = RelationshipFrom('Tipo', 'E')
+from py2neo.ogm import GraphObject, Property, RelatedFrom, RelatedTo
 
 
-class Site(StructuredNode):
-    name = StringProperty(unique_index=True)
-    news = RelationshipFrom('News', 'PUBLICOU')
+class Tipo(GraphObject):
+    __primarykey__ = "description"
+    description = Property()
+    news = RelatedFrom('News', 'E')
 
-class Tipo(StructuredNode):
-    description = StringProperty(unique_index=True)
-    news = RelationshipFrom('News', 'E')
+class News(GraphObject):
+    __primarykey__ = "title"
+    title = Property()
+    sub_title = Property()
+    url = Property()
+    site= RelatedFrom('Site', 'PUBLICOU')
+    tipo = RelatedTo(Tipo, 'E')
+    content = Property()
+
+
+
+class Site(GraphObject):
+    __primarykey__ = "name"
+    name = Property()
+    url = Property()
+    news = RelatedTo(News)
+
+

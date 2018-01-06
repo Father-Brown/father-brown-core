@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Spider/.idea/Spider.iml" filepath="$PROJECT_DIR$/../Spider/.idea/Spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/../crawler/.idea/crawler.iml" filepath="$PROJECT_DIR$/../crawler/.idea/crawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/father-borwn.iml" filepath="$PROJECT_DIR$/.idea/father-borwn.iml" />
     </modules>

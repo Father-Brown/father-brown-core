@@ -15,8 +15,8 @@ class Process:
         """
         stemmer = nltk.stem.RSLPStemmer()
         text = []
-        for (notice, clazz) in self.dataSet:
-            comstemmer =[str(stemmer.stem(p)) for p in notice.split() if p not in self.stopWords]
+        for (news, clazz) in self.dataSet:
+            comstemmer =[str(stemmer.stem(p)) for p in news.split() if p not in self.stopWords]
             text.append((comstemmer, clazz))
         return text
 
@@ -69,4 +69,29 @@ class Process:
         :param dataSet:
         :return:
         """
+
         return nltk.classify.apply_features(self.extrairFrase, dataSet)
+
+
+from database.DataBase import DataBase
+
+
+db = DataBase()
+
+dataSet=db.get_all_data_set(['vaticannews', 'semprequestione'])
+
+# data=db.get_all_news_from('vaticannews')
+
+p = Process(dataSet)
+sp =p.stemmerAplay()
+# print(p.extrairFrase())
+print(type(p.extrairFrase(dataSet)))
+print(type(p.freqWords(p.buscaPalavras()).values()))
+
+# d=p.freqWords(p.buscaPalavras()).
+# classificador=nltk.NaiveBayesClassifier.train(d)
+# #
+# print(classificador.show_most_informative_features(10))
+# for s in st.most_common(50):
+#     print(s)
+
